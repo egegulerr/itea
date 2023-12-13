@@ -26,21 +26,9 @@ Before diving into the coding challenge, let's discuss how hexagonal architectur
 
 **Question:** How does hexagonal architecture help maintain simplicity in the design of our bank account service? Discuss the benefits of starting with simpler data storage solutions.
 
-**Solution:**
-
-- Hexagonal architecture aids in maintaining simplicity by segregating the core business logic from external interfaces like data storage, using ports and adapters.
-- This separation ensures that the core logic is not coupled with storage-specific details, keeping it simple and focused.
-- Starting with simpler storage solutions like in-memory databases reduces initial complexity and facilitates easier testing and flexibility for future changes.
-
 ### b) **Evolving the System**<br/>
 
 **Question:** Explore how the system can evolve from using simple data storage to more complex ones under the YAGNI principle. Discuss the ease of making such changes in a hexagonal architecture setup.
-
-**Solution:**
-
-- Under YAGNI, the system evolves to include complex components only as needed, avoiding unnecessary initial work.
-- Hexagonal architecture allows for smooth transitions in data storage without impacting the core logic, by simply replacing or extending adapters.
-- For instance, upgrading from an in-memory database to a persistent storage solution can be done by introducing a new adapter, with no changes required in the core application.
 
 ## Task 2 - Coding Challenge: Evolving Data Storage
 
