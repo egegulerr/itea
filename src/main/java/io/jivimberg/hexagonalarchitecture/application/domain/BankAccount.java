@@ -56,4 +56,12 @@ public class BankAccount {
     public Long getId() {
         return id;
     }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
 }
