@@ -6,7 +6,7 @@ This week, we're exploring the YAGNI (You Ain't Gonna Need It) principle within 
 
 ### Understanding YAGNI
 
-YAGNI is about avoiding over-engineering and focusing on what is necessary at the moment. It encourages simplicity and minimalism in code design, ensuring that we only spend time on things that bring immediate value.
+YAGNI is about avoiding over-engineering and focusing on what is necessary at the moment. It encourages simplicity and minimalism in code design, ensuring that we only spend time on things that bring immediate value (but without compromizing on quality).
 
 ### Hexagonal Architecture and YAGNI
 
@@ -25,22 +25,30 @@ Before diving into the coding challenge, let's discuss how hexagonal architectur
 ### a) **Simplicity in Design**<br/>
 
 **Question:** How does hexagonal architecture help maintain simplicity in the design of our bank account service? Discuss the benefits of starting with simpler data storage solutions.
-
-**Solution:**
+<details>
+<summary>Solution</summary>
 
 - Hexagonal architecture aids in maintaining simplicity by segregating the core business logic from external interfaces like data storage, using ports and adapters.
 - This separation ensures that the core logic is not coupled with storage-specific details, keeping it simple and focused.
 - Starting with simpler storage solutions like in-memory databases reduces initial complexity and facilitates easier testing and flexibility for future changes.
 
+
+</details>
+
 ### b) **Evolving the System**<br/>
 
 **Question:** Explore how the system can evolve from using simple data storage to more complex ones under the YAGNI principle. Discuss the ease of making such changes in a hexagonal architecture setup.
 
-**Solution:**
+<details>
+<summary>Solution</summary>
 
 - Under YAGNI, the system evolves to include complex components only as needed, avoiding unnecessary initial work.
 - Hexagonal architecture allows for smooth transitions in data storage without impacting the core logic, by simply replacing or extending adapters.
 - For instance, upgrading from an in-memory database to a persistent storage solution can be done by introducing a new adapter, with no changes required in the core application.
+
+</details>
+
+
 
 ## Task 2 - Coding Challenge: Evolving Data Storage
 
@@ -63,7 +71,7 @@ The current bank account service uses an in-memory database for simplicity. The 
 - Demonstrate how your changes align with the YAGNI principle.
 - Discuss the potential future extensions that can be made, keeping YAGNI in mind.
 
-## Extra Credit
+## Optional Task
 
 - Propose a scenario where transitioning to a more complex database would be necessary.
 - Discuss how the hexagonal architecture would facilitate this transition.
